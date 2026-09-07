@@ -91,3 +91,31 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+/* 关于我框右下角的角色图 */
+.character-float {
+    position: absolute;
+    right: -18px;
+    bottom: 0px;
+    width: 200px;
+    height: auto;
+    opacity: 0.92;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.character-float:hover {
+    transform: translateY(-4px);
+}
+
+/* 移动端缩小，避免遮挡文字 */
+@media (max-width: 768px) {
+    .character-float {
+        width: 80px;
+        right: 8px;
+        bottom: 4px;
+    }
+}

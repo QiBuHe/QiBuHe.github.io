@@ -1,4 +1,10 @@
-source "https://rubygems.org"
+source "https://mirrors.tuna.tsinghua.edu.cn/rubygems/"
+
+# Ruby 3.4+ 不再内置这些标准库，Jekyll 3.x 依赖它们
+gem "base64"
+gem "bigdecimal"
+gem "date"
+gem "stringio"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
